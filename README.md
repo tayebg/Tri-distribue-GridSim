@@ -1,6 +1,6 @@
 # Tri-distribue GridSim — Distributed Sorting Simulator
 
-A Java desktop application and simulation built on top of the GridSim toolkit. This project demonstrates distributed computing concepts by simulating a master node that divides a large list of elements and distributes the chunks to multiple worker nodes. The workers independently sort their sublists and return them to the master node, which merges them into a final sorted list.
+A Java desktop application and simulation built on top of the GridSim toolkit. This project was developed as a practical assignment (Travaux Pratiques) for the **Grilles Informatiques** module in the Master 1 Systèmes d'Information et Données (SID) program at USTO-MB.
 
 ## Features
 
@@ -61,6 +61,8 @@ java -cp "bin;lib/gridsim.jar;lib/simjava2.jar" SortingUI
 
 This project is licensed under the [MIT License](LICENSE).
 
-## Author
+## Authors
 
-[Tayeb Bekkouche](https://github.com/tayebg)
+- [Tayeb Bekkouche](https://github.com/tayebg)
+- Ilyes Abdelillah Bakkar
+- Bouabdallah Benarbia
