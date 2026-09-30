@@ -21,16 +21,14 @@ A Java desktop application and simulation built on top of the GridSim toolkit. T
 
 ```
 Tri-distribue-GridSim/
-├── ProjetGI/
-│   ├── src/                    # Java source files
-│   ├── libs/                   # GridSim and SimJava dependencies
-│   ├── bin/                    # Compiled classes
-│   └── .classpath, .project    # Eclipse config files
+├── src/                        # Java source files
+├── lib/                        # GridSim and SimJava dependencies
+├── bin/                        # Compiled classes
+├── docs/                       # Project documentation and PDFs
+├── run.bat                     # Windows build and run script
+├── .classpath, .project        # Eclipse config files
 ├── README.md
-├── LICENSE
-├── .gitignore
-├── TP 2025-2026_292cc2e22873b57e575cc022a17255fb.pdf # Assignment description
-└── Tri_distribue_GridSim.pdf   # Project presentation
+└── LICENSE
 ```
 
 ## Getting Started
@@ -38,16 +36,17 @@ Tri-distribue-GridSim/
 ### Prerequisites
 
 - JDK 8 or higher
-- The included `gridsim.jar` and `simjava2.jar` files (located in `ProjetGI/libs/`)
+- The included `gridsim.jar` and `simjava2.jar` files (located in `lib/`)
 
-### Build
+### Build & Run
 
-1. Navigate to the `ProjetGI` directory.
-2. Compile the Java files, including the required libraries in the classpath:
+**Windows users:** Simply run `run.bat` to compile and launch the application.
+
+**Manual Build:**
+Compile the Java files, including the required libraries in the classpath:
 
 ```bash
-cd ProjetGI
-javac -cp "libs/gridsim.jar;libs/simjava2.jar" -d bin src/*.java
+javac -cp "lib/gridsim.jar;lib/simjava2.jar" -d bin src/*.java
 ```
 
 ### Run
@@ -55,7 +54,7 @@ javac -cp "libs/gridsim.jar;libs/simjava2.jar" -d bin src/*.java
 Run the application through the GUI:
 
 ```bash
-java -cp "bin;libs/gridsim.jar;libs/simjava2.jar" SortingUI
+java -cp "bin;lib/gridsim.jar;lib/simjava2.jar" SortingUI
 ```
 
 ## License
